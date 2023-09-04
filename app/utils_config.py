@@ -38,6 +38,7 @@ DATASTORES = {
     # Sample datastore ID
     # 'google-ads-support_1111111111': 'default_config'
     # '<UNCOMMENT AND PASTE THE ID HERE>': 'default_config'
+    'google-ads-support_1693633962112': 'default_config'
 }
 SEARCH_LOCATION = 'global'
 
@@ -53,6 +54,26 @@ INFOBOT = (
 #   language-code="en"
 # ></df-messenger>
 #     '''
+'''
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  agent-id="390be49b-a329-4fb6-ab32-a60ed564dbc6"
+  language-code="en" intent="WELCOME">
+  <df-messenger-chat-bubble
+   chat-title="Google Ads Support chatbot"
+   bot-writing-text="..."
+   placeholder-text="PLACEHOLDER_TEXT">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+'''
 )
 
 # Location
@@ -66,10 +87,10 @@ LOCATION = 'us-central1'
 SERVICE_ACCOUNT_JSON_KEY = '/app/credentials.json'  # Change this path if you copied the file to a different path 
 
 # ID of the templates
-DRIVE_FOLDER_ID = '<DRIVE FOLDER ID>' # example: "1MYB0Ybyo9XZERgIcjsdfeqO0SKqhrkvqMx"
-SLIDES_TEMPLATE_ID = '<SLIDES TEMPLATE ID>' # example: '16uQlLkCJ9YRiMU_IoONHsl-vY-uKeoasnWTPlbZZ1D4'
-DOC_TEMPLATE_ID = '<DOCS TEMPLATE ID>' # example: '1kqvxZLRXIdfM8MVS7css4UoiJ8f0I4dKFj9cP986K4pM'
-SHEET_TEMPLATE_ID = '<SHEETS TEMPLATE ID>' # example: '1gIaIWLOeKmnjso7-CAAAcqMlPznpoEXDdEue3DNWr7bw'
+DRIVE_FOLDER_ID = '1AWIbGSSMbFu-NQ4a1XZ1nGup3sMxMtSP' # example: "1MYB0Ybyo9XZERgIcjsdfeqO0SKqhrkvqMx"
+SLIDES_TEMPLATE_ID = '1GSOLDWcOGvXCbo-eVAe-9JZc7ezGWfAE' # example: '16uQlLkCJ9YRiMU_IoONHsl-vY-uKeoasnWTPlbZZ1D4'
+DOC_TEMPLATE_ID = '1oylN3D7Z0eRAJpwC6DABi25lVbEuH-8X' # example: '1kqvxZLRXIdfM8MVS7css4UoiJ8f0I4dKFj9cP986K4pM'
+SHEET_TEMPLATE_ID = '11F7hXRA7HurRgLag7_yMI1uOvGk_LZTD' # example: '1gIaIWLOeKmnjso7-CAAAcqMlPznpoEXDdEue3DNWr7bw'
 SLIDE_PAGE_ID_LIST = ["p3","p4","p5","p6","p7","p8"] # LIST OF PAGES WHERE YOU WANT TO INSERT CHARTS FROM THE SHEETS
 
 # Scope for the Workspace API - don't change
